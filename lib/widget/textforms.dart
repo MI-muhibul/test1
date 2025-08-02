@@ -8,26 +8,21 @@ class textFormFieldss extends StatelessWidget {
     // TODO: implement build
     return Column(
       children: [
-        TextFormField(
-          decoration: InputDecoration(
-            hintText: 'name',
-            border: OutlineInputBorder(borderSide: BorderSide(width: 4)),
-          ),
-        ),
-        SizedBox(height: 20),
-        TextFormField(
-          decoration: InputDecoration(
-            hintText: 'Age',
-            contentPadding: EdgeInsets.symmetric(horizontal: 15, vertical: 0),
-          ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: TextFormField(decoration: InputDecoration(hintText: 'name')),
         ),
 
         SizedBox(height: 20),
-        TextFormField(
-          decoration: InputDecoration(
-            hintText: 'Salary',
-            border: OutlineInputBorder(borderSide: BorderSide(width: 4)),
-          ),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: TextFormField(decoration: InputDecoration(hintText: 'Age')),
+        ),
+
+        SizedBox(height: 20),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+          child: TextFormField(decoration: InputDecoration(hintText: 'Salary')),
         ),
       ],
     );
